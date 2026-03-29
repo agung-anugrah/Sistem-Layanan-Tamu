@@ -9,7 +9,7 @@ if(isset($_POST['hapus'])){
 
     if($stmt->execute()){
         echo "test";
-        header("Location: ../../page/daftar-hadir.php");
+        header("Location: ../../page/admin/daftar-hadir.php");
         exit;
     } else {
         echo "Gagal hapus: " . $stmt->error;

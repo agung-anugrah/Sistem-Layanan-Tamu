@@ -14,8 +14,8 @@ if(!isset($_SESSION['username'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservasi Tamu</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="../script/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style-reservasi.css">
+    <link href="../../script/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style-reservasi.css">
 </head>
 <body>
     <main class="content">
@@ -27,7 +27,7 @@ if(!isset($_SESSION['username'])){
                     <!-- Card Data Kontak -->
                     <div class="main-card">
                         <!-- logo -->
-                        <img src="../img/logo_kpu.png" width="40" class="mb-4">
+                        <img src="../../img/logo_kpu.png" width="40" class="mb-4">
     
                         <!-- header -->
                         <div class="d-flex justify-content-between align-items-center mb-4">
@@ -42,7 +42,7 @@ if(!isset($_SESSION['username'])){
     
                         <!-- icon -->
                         <div class="icon-box mb-3">
-                            <img src="../icon/calendar.png" alt="" class="icon">
+                            <img src="../../icon/calendar.png" alt="" class="icon">
                         </div>
     
                         <!-- text -->
@@ -50,7 +50,7 @@ if(!isset($_SESSION['username'])){
     
                         <p class="desc">
                             Silakan lengkapi formulir berikut untuk melakukan reservasi kunjungan ke
-                            <b>KPU Provinsi Sumatera Barat</b>. Data yang benar membantu proses
+                            <b>KPU Kota Padang</b>. Data yang benar membantu proses
                             verifikasi dan penjadwalan lebih cepat.
                         </p>
     
@@ -65,7 +65,7 @@ if(!isset($_SESSION['username'])){
                 <!-- Kolom kanan (konten utama) -->
                 <div class="col-md-7">
                     
-                    <form action="../crud/add/add-reservasi.php" method="POST">
+                    <form action="../../crud/add/add-reservasi.php" method="POST">
                         <!-- Card contact Pemohon -->
                         <div class="card">
                             <div class="card-header">
@@ -79,7 +79,7 @@ if(!isset($_SESSION['username'])){
                                             
                                             <div class="input-group">
                                                 <span class="input-group-text">
-                                                    <img src="../icon/telephone.png" alt="" class="icon">
+                                                    <img src="../../icon/telephone.png" alt="" class="icon">
                                                 </span>
                                                 
                                                 <input type="text" class="form-control" placeholder="08xxxxxxxxxx" name="noHp" required>
@@ -95,7 +95,7 @@ if(!isset($_SESSION['username'])){
                                             <label class="form-label">Email</label>
                                             <div class="input-group">
                                                 <span class="input-group-text">
-                                                    <img src="../icon/mail.png" alt="" class="icon">
+                                                    <img src="../../icon/mail.png" alt="" class="icon">
                                                 </span>
                                                 <input type="email" class="form-control" placeholder="nama@email.com" name="email" required>
                                             </div>
@@ -114,7 +114,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="nama" class="form-label">Nama Lengkap</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/user.png" alt="" class="icon">
+                                                <img src="../../icon/user.png" alt="" class="icon">
                                             </span>
                                             <input type="text" class="form-control" placeholder="Masukan Nama Lengkap" name="nama" required>
                                         </div>
@@ -123,7 +123,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="alamat" class="form-label">Alamat</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/pin.png" alt="" class="icon">
+                                                <img src="../../icon/pin.png" alt="" class="icon">
                                             </span>
                                             <input type="text" class="form-control" placeholder="Masukan Alamat Lengkap" name="alamat" required>
                                         </div>
@@ -132,7 +132,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="instansi" class="form-label">Instansi / Lembaga / Masyarakat</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/agency.png" alt="" class="icon">
+                                                <img src="../../icon/agency.png" alt="" class="icon">
                                             </span>
                                             <input type="text" class="form-control" placeholder="Masukan Nama Instasi" name="instansi" required>
                                         </div>
@@ -150,7 +150,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="rencana" class="form-label">Rencana Kunjungan</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/calendar.png" alt="" class="icon">
+                                                <img src="../../icon/calendar.png" alt="" class="icon">
                                             </span>
                                             <input type="datetime-local" class="form-control" id="rencana" name="tanggal">
                                         </div>
@@ -160,7 +160,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="tujuan" class="form-label">Tujuan Kunjungan</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/messenger.png" alt="" class="icon">
+                                                <img src="../../icon/messenger.png" alt="" class="icon">
                                             </span>
                                             <select class="form-select" id="tujuan" name="tujuan" required>
                                                 <option selected disabled>-- Pilih --</option>
@@ -189,7 +189,7 @@ if(!isset($_SESSION['username'])){
                                         <label for="maksud" class="form-label">Maksud Kunjungan</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/people.png" alt="" class="icon">
+                                                <img src="../../icon/people.png" alt="" class="icon">
                                             </span>
                                             <select class="form-select" id="Maksud" name="maksud" required>
                                                 <option selected disabled>-- Pilih --</option>
@@ -211,9 +211,9 @@ if(!isset($_SESSION['username'])){
                                         <label for="topik" class="form-label">Topik Kunjungan</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
-                                                <img src="../icon/information.png" alt="" class="icon">
+                                                <img src="../../icon/information.png" alt="" class="icon">
                                             </span>
-                                            <textarea class="form-control" id="topik" rows="3" placeholder="Ringkas topik yang akan dibahas" name="topik" required></textarea>
+                                            <textarea class="form-control" id="topik" rows="3" placeholder="Ringkas topik yang akan dibahas" name="topik" ></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -235,6 +235,6 @@ if(!isset($_SESSION['username'])){
         </div>
     </footer> 
     <!-- Bootstrap JS (untuk komponen interaktif jika diperlukan, tidak wajib untuk layout) -->
-    <script src="../script/bootstrap.bundle.min.js"></script>
+    <script src="../../script/bootstrap.bundle.min.js"></script>
 </body>
 </html>

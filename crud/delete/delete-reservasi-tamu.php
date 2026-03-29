@@ -8,7 +8,7 @@ if(isset($_POST['hapus'])){
     $stmt->bind_param("i", $id);
 
     if($stmt->execute()){
-        header("Location: ../../page/daftar-reservasi.php");
+        header("Location: ../../page/admin/daftar-hadir.php");
         exit;
     } else {
         echo "Gagal hapus: " . $stmt->error;

@@ -2,7 +2,7 @@
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header("Location: ../index.php");
+    header("Location: login-admin.php");
     exit();
 }
 ?>
@@ -51,7 +51,7 @@ if(!isset($_SESSION['username'])){
     
                         <p class="desc">
                             Silakan lengkapi formulir berikut untuk melakukan reservasi kunjungan ke
-                            <b>KPU Provinsi Sumatera Barat</b>. Data yang benar membantu proses
+                            <b>KPU Kota Padang</b>. Data yang benar membantu proses
                             verifikasi dan penjadwalan lebih cepat.
                         </p>
     

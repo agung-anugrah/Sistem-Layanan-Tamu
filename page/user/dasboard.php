@@ -38,7 +38,7 @@ $tanggal_akhir = $data['tanggal_akhir'];
             <div class="text-center mb-5">
                 <h1 class="main-title">Sistem Layanan Tamu</h1>
                 <p class="lead">
-                Selamat datang di <b>Sistem Layanan Tamu KPU Provinsi Sumatera Barat.</b><br>
+                Selamat datang di <b>Sistem Layanan Tamu KPU Kota Padang.</b><br>
                 Pilih layanan di bawah ini agar proses Anda lebih cepat, jelas,
                 dan terdokumentasi dengan baik.
                 </p>

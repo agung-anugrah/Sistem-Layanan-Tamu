@@ -44,7 +44,7 @@ while($row = $result->fetch_assoc()){
     }
 
     $sub[] = "
-        <form action='../crud/delete/delete-buku-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
+        <form action='../../crud/delete/delete-buku-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
             <input type='hidden' name='id' value='".$row['id']."'>
             <button class='btn btn-danger btn-sm'>Hapus</button>
         </form>

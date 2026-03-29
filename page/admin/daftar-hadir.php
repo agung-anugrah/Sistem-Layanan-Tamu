@@ -1,10 +1,10 @@
 <?php
-include "../service/koneksi.php";
+include "../../service/koneksi.php";
 
 session_start();
 
 if(!isset($_SESSION['username'])){
-    header("Location: ../index.php");
+    header("Location: login-admin.php");
     exit();
 }
 
@@ -17,9 +17,9 @@ $result = $db -> query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Hadir Tamu</title>
-    <link href="../script/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../script/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="../css/style-daftar-hadir.css">
+    <link href="../../script/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../script/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../../css/style-daftar-hadir.css">
 </head>
 <style>
 
@@ -76,16 +76,16 @@ $result = $db -> query($sql);
         </div>
     </footer> 
 
-    <script src="../script/bootstrap.bundle.min.js"></script>
-    <script src="../script/jquery-3.7.1.js"></script>
-    <script src="../script/jquery.dataTables.min.js"></script>
-    <script src="../script/dataTables.bootstrap5.min.js"></script>
+    <script src="../../script/bootstrap.bundle.min.js"></script>
+    <script src="../../script/jquery-3.7.1.js"></script>
+    <script src="../../script/jquery.dataTables.min.js"></script>
+    <script src="../../script/dataTables.bootstrap5.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#tabelTamu').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '../server/server-side-buku-tamu.php',
+                ajax: '../../server/server-side-buku-tamu.php',
                 pageLength: 10,
                 scrollX: true,
                 scrollCollapse: true,
