@@ -14,16 +14,17 @@ $totalData = $totalResult->fetch_assoc()['total'];
 $sql = "SELECT * FROM reservasi_tamu";
 
 if(!empty($search)){
-    $sql .= " WHERE nama_tamu LIKE '%$search%' 
-              OR nohp_tamu LIKE '%$search% 
-              OR email_tamu LIKE '%$search% 
-              OR alamat_tamu LIKE '%$search% 
-              OR instasi_tamu LIKE '%$search% 
-              OR tanggal_tamu LIKE '%$search% 
-              OR tujuan_tamu LIKE '%$search% 
-              OR maksud_tamu LIKE '%$search% 
-              OR topik_tamu LIKE '%$search% 
-              '";
+    $where = " WHERE nama_tamu LIKE '%$search%' 
+        OR nohp_tamu LIKE '%$search%' 
+        OR email_tamu LIKE '%$search%' 
+        OR alamat_tamu LIKE '%$search%'";  
+    $sql .= $where;
+
+    $countFilter = "SELECT COUNT(*) as total FROM buku_tamu " . $where;
+    $resultFilter = $db->query($countFilter);
+    $totalFiltered = $resultFilter->fetch_assoc()['total'];
+} else {
+    $totalFiltered = $totalData;
 }
 
 $sql .= " LIMIT $start, $limit";
@@ -57,7 +58,7 @@ while($row = $result->fetch_assoc()){
 $response = [
     "draw" => intval($_GET['draw']),
     "recordsTotal" => $totalData,
-    "recordsFiltered" => $totalData,
+    "recordsFiltered" => $totalFiltered,
     "data" => $data
 ];
 

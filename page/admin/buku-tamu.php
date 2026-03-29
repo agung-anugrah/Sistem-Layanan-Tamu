@@ -34,9 +34,9 @@ if(!isset($_SESSION['username'])){
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div class="title">
                                 <i class="bi bi-calendar-check-fill me-2"></i>
-                                Registrasi Kunjungan
+                                Buku Tamu
                             </div>
-                            <a href="../../dasboard.php" class="btn btn-kembali">
+                            <a href="dasboard.php" class="btn btn-kembali">
                                 <i class="bi bi-arrow-left"></i> Kembali
                             </a>
                         </div>

@@ -21,9 +21,6 @@ $result = $db -> query($sql);
     <link rel="stylesheet" href="../../script/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="../../css/style-daftar-hadir.css">
 </head>
-<style>
-
-</style>
 <body>
     <main class="content">
         <div class="container">

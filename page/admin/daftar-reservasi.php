@@ -1,5 +1,5 @@
 <?php
-include "../service/koneksi.php";
+include "../../service/koneksi.php";
 
 session_start();
 
@@ -17,9 +17,9 @@ $result = $db -> query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Hadir Tamu</title>
-    <link href="../script/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../script/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="../css/style-daftar-reservasi.css">
+    <link href="../../script/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../script/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="../../css/style-daftar-reservasi.css">
 </head>
 <body>
     <main class="content">
@@ -44,14 +44,16 @@ $result = $db -> query($sql);
                                 $fields = $result->fetch_fields();
                                 foreach ($fields as $field) {
                                      if($field->name != 'id'){?>
-                                    <th class='text-center'>
-                                        <?php echo(ucwords(str_replace("_"," ",$field->name)))?>
-                                    </th>
+                                        <th class='text-center'>
+                                            <?php echo(ucwords(str_replace("_"," ",$field->name)))?>
+                                        </th>
                                     <?php
                                     }
                                 }
                                 ?>
-                                <th>Aksi</th>
+                                <th class="text-center">
+                                    aksi
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -70,16 +72,16 @@ $result = $db -> query($sql);
             <small>Developed by Agung Anugrah Illahi</small>
         </div>
     </footer> 
-    <script src="../script/bootstrap.bundle.min.js"></script>
-    <script src="../script/jquery-3.7.1.js"></script>
-    <script src="../script/jquery.dataTables.min.js"></script>
-    <script src="../script/dataTables.bootstrap5.min.js"></script>
+    <script src="../../script/bootstrap.bundle.min.js"></script>
+    <script src="../../script/jquery-3.7.1.js"></script>
+    <script src="../../script/jquery.dataTables.min.js"></script>
+    <script src="../../script/dataTables.bootstrap5.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#tabelTamu').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: '../server/server-side-reservasi-tamu.php',
+                ajax: '../../server/server-side-reservasi-tamu.php',
                 pageLength: 10,
                 scrollX: true,
                 scrollCollapse: true,

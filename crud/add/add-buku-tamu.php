@@ -1,6 +1,8 @@
 <?php
 session_start();
 include "../../service/koneksi.php";
+include "../../response/resPhone-daftar-hadir-tamu.php";
+
 
 if(isset($_POST["simpan"])){
 
@@ -55,7 +57,18 @@ if(isset($_POST["simpan"])){
         $data["topik"]
     );
 
+
     if($stmt->execute()){
+
+        // format no wa
+        $data['noHp'] = formatNomor($data['noHp']);
+
+        // format pesan WA
+        $pesan = formatPesan($data['nama'],$data['tujuan'],$data['maksud'],$data['tanggal']);
+
+        // trigger kirim WA
+        kirimWA($data['noHp'], $pesan);
+
        if ($_SESSION['role'] == 'user') {
             $redirect = "../../page/user/dasboard.php?status=sukses";
         } else if($_SESSION['role'] == 'admin') {
