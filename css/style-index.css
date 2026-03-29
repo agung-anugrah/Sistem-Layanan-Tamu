@@ -1,0 +1,19 @@
+body {
+    background: #f5f7fa;
+}
+
+.login-card {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 30%;
+}
+
+.btn-login {
+    border-radius: 10px;
+}
+
+
+

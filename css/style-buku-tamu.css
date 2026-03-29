@@ -1,0 +1,123 @@
+/* Sedikit penyesuaian agar lebih mirip gambar */
+body{
+
+    background:#f3f5f7;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    align-content: space-between;
+}
+
+.content{
+    flex:1;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+.card-body {
+    padding: 20px;
+}
+.back-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+.btn-reservasi {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 100%;
+}
+.btn-reservasi:hover {
+    background-color: #0056b3;
+} 
+
+.main-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* judul */
+.title{
+    font-weight:700;
+    font-size:24px;
+    color:#1f2d3d;
+}
+
+/* tombol kembali */
+.btn-kembali{
+    background:#c62828;
+    color:white;
+    padding:10px 22px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+.btn-kembali:hover{
+    background:#b71c1c;
+    color:white;
+}
+
+/* icon kotak */
+.icon-box{
+    width:56px;
+    height:56px;
+    background:#f6d6d6;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* heading */
+.heading{
+    font-weight:700;
+    color:#1f2d3d;
+    margin-top:20px;
+}
+
+/* paragraf */
+.desc{
+    color:#6c757d;
+    line-height:1.7;
+}
+
+/* info box */
+.info-box{
+    background:#dce7f5;
+    border-radius:14px;
+    padding:18px 20px;
+    color:#355070;
+    border:1px solid #c6d6ec;
+}
+
+.icon{
+    width: 20px;
+}
+
+.content {
+    flex: 1;
+}
+
+footer{
+    margin-top: auto;
+}
+

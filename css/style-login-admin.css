@@ -1,0 +1,38 @@
+body {
+    background: #f5f7fa;
+}
+
+.login-card {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding-left: 40px;
+}
+.icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.form-control {
+    padding-left: 40px; /* kasih ruang untuk icon */
+    border-radius: 10px;
+}
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+.btn-login {
+    border-radius: 10px;
+}
