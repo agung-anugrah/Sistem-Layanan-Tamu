@@ -8,7 +8,6 @@ if(isset($_POST['hapus'])){
     $stmt->bind_param("i", $id);
 
     if($stmt->execute()){
-        echo "test";
         header("Location: ../../page/admin/daftar-hadir.php");
         exit;
     } else {

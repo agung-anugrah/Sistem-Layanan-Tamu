@@ -155,21 +155,16 @@
                                             </span>
                                             <select class="form-select" id="tujuan" name="tujuan" required>
                                                 <option selected disabled>-- Pilih --</option>
-                                                <option value="Ketua (Divisi Keuangan, Umum, Rumah Tangga, Dan Logistik)">Ketua (Divisi Keuangan, Umum, Rumah Tangga, dan Logistik)</option>
-                                                <option value="Ketua (Divisi Perencanaan, Data, Dan Informasi)">Ketua (Divisi Perencanaan, Data, Dan Informasi)</option>
-                                                <option value="Ketua (Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia)">Ketua (Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia)</option>
-                                                <option value="Ketua (Divisi Hukum dan Pengawasan)">Ketua (Divisi Hukum dan Pengawasan)</option>
-                                                <option value="Ketuan (Divisi Teknis Penyelenggara)">Ketuan (Divisi Teknis Penyelenggara)</option>
-                                                <option value="Divisi Keuangan, Umum, Rumah Tangga, dan Logistik">Divisi Keuangan, Umum, Rumah Tangga, dan Logistik</option>
-                                                <option value="Divisi Perencanaan, Data, Dan Informasi">Divisi Perencanaan, Data, Dan Informasi</option>
-                                                <option value="Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia">Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia</option>
-                                                <option value="Divisi Hukum dan Pengawasan">Divisi Hukum dan Pengawasan</option>
+                                                <option value="Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik)">Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik</option>
                                                 <option value="Divisi Teknis Penyelenggara">Divisi Teknis Penyelenggara</option>
+                                                <option value="Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia">Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat dan Sumber Daya Manusia</option>
+                                                <option value="Divisi Perencanaan, Data, Dan Informasi">Divisi Perencanaan, Data dan Informasi</option>
+                                                <option value="Divisi Hukum dan Pengawasan">Divisi Hukum dan Pengawasan</option>
                                                 <option value="Sekretaris">Sekretaris</option>
                                                 <option value="Subbagian Keuangan, Umum dan Logistik">Subbagian Keuangan, Umum dan Logistik</option>
                                                 <option value="Subbagian Teknis Penyelenggaraan Pemilu dan Hukum">Subbagian Teknis Penyelenggaraan Pemilu dan Hukum</option>
                                                 <option value="Subbagian Perencanaan, Data dan Informasi">Subbagian Perencanaan, Data dan Informasi</option>
-                                                <option value="Subbagian Partisipasi, Hubungan Masyarakat, dan Sumber Daya Manusia">Subbagian Partisipasi, Hubungan Masyarakat, dan Sumber Daya Manusia</option>
+                                                <option value="Subbagian Partisipasi, Hubungan Masyarakat, dan Sumber Daya Manusia">Subbagian Partisipasi, Hubungan Masyarakat dan Sumber Daya Manusia</option>
                                                 <option value="PPID">PPID</option>
                                                 <option value="Lainnya">Lainnya</option>
                                             </select>

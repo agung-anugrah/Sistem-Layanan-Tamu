@@ -40,7 +40,7 @@ function formatNomor($noHp){
 
 
 // format pesan
-function formatPesan($nama,$tujuan,$maksud){
+function formatPesan($nama,$tujuan,$maksud,$tanggal,$jam){
     return "Halo {$nama},
 
 Terima kasih telah mengisi Daftar Hadir Tamu pada *Sistem Layanan Tamu KPU Kota Padang*.
@@ -49,9 +49,11 @@ Kehadiran Anda sangat kami apresiasi. Data yang Anda berikan akan digunakan untu
 
 ──────────────────
 
-📌 *Detail Kunjungan*
+📌 *Detail Reservasi*
 Tujuan : *{$tujuan}*
 Maksud : *{$maksud}*
+Jadwal : *{$tanggal}*
+Jam    : *{$jam} WIB*
 
 ──────────────────
 

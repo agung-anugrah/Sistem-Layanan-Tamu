@@ -1,5 +1,6 @@
 <?php
 include "../../service/koneksi.php";
+include "../../response/resPhone-daftar-reservasi-tamu.php";
 session_start();
 
 if(isset($_POST["simpan"])){
@@ -34,12 +35,7 @@ if(isset($_POST["simpan"])){
         }
     }
 
-    // Validasi email
-    // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    //     echo "Format email tidak valid!";
-    //     exit;
-    // }
-
+    
     // Prepared Statement (lebih aman dari SQL Injection)
     $stmt = $db->prepare("INSERT INTO reservasi_tamu 
         (nohp_tamu,email_tamu,nama_tamu,alamat_tamu,instasi_tamu,tanggal_kunjungan,tujuan_kunjungan,maksud_kunjungan,topik_kunjungan) 
@@ -59,6 +55,25 @@ if(isset($_POST["simpan"])){
     );
 
     if($stmt->execute()){
+
+        // format no wa
+        $data['noHp'] = formatNomor($data['noHp']);
+        
+        // format tanggal
+        $timestamp = strtotime($data['tanggal']);
+        $tanggal = date('Y-m-d', $timestamp);
+        $jam     = date('H:i', $timestamp); 
+
+        $data['tanggal']=$tanggal;
+        $data['jam']=$jam;
+        
+
+        // format pesan WA
+        $pesan = formatPesan($data['nama'],$data['tujuan'],$data['maksud'],$data['tanggal'],$data['jam']);
+
+        // trigger kirim WA
+        kirimWA($data['noHp'], $pesan);
+
        if ($_SESSION['role'] == 'user') {
             $redirect = "../../page/user/dasboard.php?status=sukses";
         } else if($_SESSION['role'] == 'admin') {

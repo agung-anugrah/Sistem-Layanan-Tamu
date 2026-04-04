@@ -30,7 +30,7 @@ $result = $db -> query($sql);
                 </div>
                 <div class="d-flex justify-content-between mt-3 mb-3">
                     <a class="btn btn-danger btn-sm" href="dasboard.php">Kembali</a>
-                    <a class="btn btn-success btn-sm" href="../export/export-daftar-hadir.php">Unduh Daftar</a>
+                    <a class="btn btn-success btn-sm" href="../../export/export-daftar-hadir.php">Unduh Daftar</a>
                 </div>
     
                 <div class="table-container">
@@ -52,7 +52,7 @@ $result = $db -> query($sql);
                                 }
                                 ?>
                                 <th class="text-center">
-                                    aksi
+                                    Aksi
                                 </th>
                             </tr>
                         </thead>

@@ -46,10 +46,17 @@ while($row = $result->fetch_assoc()){
     }
 
     $sub[] = "
-        <form action='../../crud/delete/delete-buku-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
-            <input type='hidden' name='id' value='".$row['id']."'>
-            <button class='btn btn-danger btn-sm' name='hapus'>Hapus</button>
-        </form>
+        <div class='d-flex gap-2'>
+            
+            <form action='../../page/admin/form-edit/form-edit-buku-tamu.php' method='POST'>
+                <input type='hidden' name='id' value='".$row['id']."'>
+                <button class='btn btn-primary btn-sm' name='edit'>Edit</button>
+            </form> 
+            <form action='../../crud/delete/delete-buku-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
+                <input type='hidden' name='id' value='".$row['id']."'>
+                <button class='btn btn-danger btn-sm' name='hapus'>Hapus</button>
+            </form>
+        </div>
     ";
 
     $data[] = $sub;
