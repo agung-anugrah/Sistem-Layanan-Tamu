@@ -155,7 +155,7 @@ if(!isset($_SESSION['username'])){
                                             </span>
                                             <select class="form-select" id="tujuan" name="tujuan" required>
                                                 <option selected disabled>-- Pilih --</option>
-                                                <option value="Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik)">Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik</option>
+                                                <option value="Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik">Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik</option>
                                                 <option value="Divisi Teknis Penyelenggara">Divisi Teknis Penyelenggara</option>
                                                 <option value="Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia">Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat dan Sumber Daya Manusia</option>
                                                 <option value="Divisi Perencanaan, Data, Dan Informasi">Divisi Perencanaan, Data dan Informasi</option>

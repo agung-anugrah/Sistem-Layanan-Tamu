@@ -1,7 +1,7 @@
 <?php
 
 function kirimWA($target, $pesan) {
-    $token = "PWaeo39ATAU11BjfetPs";
+    $token = "uUBaYJyym2j9h7hmLCUT";
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
@@ -30,7 +30,7 @@ function formatNomor($noHp){
     $noHp = preg_replace('/[^0-9]/', '', $noHp);
 
     if(substr($noHp, 0, 2) == "62"){
-        return $noHp; // sudah benar
+        return $noHp; 
     } elseif(substr($noHp, 0, 1) == "0"){
         return "62" . substr($noHp, 1);
     } else {

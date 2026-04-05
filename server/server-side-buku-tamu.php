@@ -40,14 +40,13 @@ while($row = $result->fetch_assoc()){
     $sub[] = $no++;
     
     foreach($row as $key => $val){
-        if($key != 'id'){
+        if($key != 'id' && $key != 'kirim_survei'){
             $sub[] = ucwords($val);
         }
     }
 
     $sub[] = "
         <div class='d-flex gap-2'>
-            
             <form action='../../page/admin/form-edit/form-edit-buku-tamu.php' method='POST'>
                 <input type='hidden' name='id' value='".$row['id']."'>
                 <button class='btn btn-primary btn-sm' name='edit'>Edit</button>
@@ -58,7 +57,6 @@ while($row = $result->fetch_assoc()){
             </form>
         </div>
     ";
-
     $data[] = $sub;
 }
 

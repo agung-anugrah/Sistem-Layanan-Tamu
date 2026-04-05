@@ -29,8 +29,8 @@ $result = $db -> query($sql);
                     <h4 class="main-title col-md-3 text-center">Daftar Hadir Tamu</h4>
                 </div>
                 <div class="d-flex justify-content-between mt-3 mb-3">
-                    <a class="btn btn-danger btn-sm" href="dasboard.php">Kembali</a>
-                    <a class="btn btn-success btn-sm" href="../../export/export-daftar-hadir.php">Unduh Daftar</a>
+                    <a class="btn btn-kembali" href="dasboard.php">Kembali</a>
+                    <a class="btn btn-unduh" href="../../export/export-daftar-hadir.php">Unduh Daftar</a>
                 </div>
     
                 <div class="table-container">
@@ -43,7 +43,7 @@ $result = $db -> query($sql);
                                 <?php
                                 $fields = $result->fetch_fields();
                                 foreach ($fields as $field) {
-                                     if($field->name != 'id'){?>
+                                     if($field->name != 'id' && $field->name != 'kirim_survei'){?>
                                         <th class='text-center'>
                                             <?php echo(ucwords(str_replace("_"," ",$field->name)))?>
                                         </th>
@@ -86,7 +86,7 @@ $result = $db -> query($sql);
                 pageLength: 10,
                 scrollX: true,
                 scrollCollapse: true,
-                dom: '<"top"f>rt<"bottom"lip>'
+                dom: '<"top"f>rt<"bottom"lip>',
             });
         });
 

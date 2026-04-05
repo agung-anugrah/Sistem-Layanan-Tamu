@@ -30,6 +30,32 @@ body{
     font-weight:700;
 }
 
+.btn-kembali{
+    background:#c62828;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-kembali:hover{
+    background:#b71c1c;
+    color:white;
+}
+
+.btn-unduh{
+    background:#198754;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-unduh:hover{
+    background:#157347;
+    color:white;
+}
+
 /* container search */
 .dataTables_filter{
     float: none !important;
@@ -52,7 +78,19 @@ body{
 @media screen and (max-width:500px){
     .dataTables_filter input{
         width: 80% !important;
-    }  
+    }
+    .page-item a{
+        padding: 5px;
+    }
+}
+@media screen and (max-width:300px){
+    .dataTables_filter input{
+        width: 70% !important;
+    }
+    .page-item a{
+        padding: 6px;
+        font-size: 10px;
+    }
 }
 
 footer{

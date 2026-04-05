@@ -1,7 +1,7 @@
 <?php
 
 function kirimWA($target, $pesan) {
-    $token = "PWaeo39ATAU11BjfetPs";
+    $token = "uUBaYJyym2j9h7hmLCUT";
     $curl = curl_init();
 
     curl_setopt_array($curl, array(

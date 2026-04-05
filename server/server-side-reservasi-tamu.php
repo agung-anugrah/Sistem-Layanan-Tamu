@@ -39,16 +39,22 @@ while($row = $result->fetch_assoc()){
     $sub[] = $no++;
     
     foreach($row as $key => $val){
-        if($key != 'id'){
+        if($key != 'id' && $key !='kirim_survei'){
             $sub[] = ucwords($val);
         }
     }
 
     $sub[] = "
-        <form action='../../crud/delete/delete-reservasi-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
-            <input type='hidden' name='id' value='".$row['id']."'>
-            <button class='btn btn-danger btn-sm' name='hapus'>Hapus</button>
-        </form>
+        <div class='d-flex gap-2'>
+            <form action='../../page/admin/form-edit/form-edit-reservasi-tamu.php' method='POST'>
+                <input type='hidden' name='id' value='".$row['id']."'>
+                <button class='btn btn-primary btn-sm' name='edit'>Edit</button>
+            </form> 
+            <form action='../../crud/delete/delete-reservasi-tamu.php' method='POST' onsubmit=\"return confirm('hapus?')\">
+                <input type='hidden' name='id' value='".$row['id']."'>
+                <button class='btn btn-danger btn-sm' name='hapus'>Hapus</button>
+            </form>
+        </div>
     ";
 
     $data[] = $sub;

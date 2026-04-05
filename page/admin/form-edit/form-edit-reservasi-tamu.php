@@ -9,7 +9,7 @@ if(!isset($_SESSION['username'])){
 }
 if(isset($_POST['edit'])){
     $id = $_POST['id'];
-    $sql = "SELECT * from buku_tamu where id='$id'";
+    $sql = "SELECT * from reservasi_tamu where id='$id'";
     $result = $db->query($sql);
     $row = $result->fetch_assoc();
 
@@ -29,14 +29,14 @@ if(isset($_POST['edit'])){
         <title>Buku Tamu</title>
         <!-- Bootstrap 5 CSS -->
         <link href="../../../script/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../../css/style-edit-buku-tamu.css">
+        <link rel="stylesheet" href="../../../css/style-edit-reservasi-tamu.css">
         
     </head>
     <body>
         <main class="content">
             <div class="container my-4">
                 <div class="">
-                    <form action="../../../crud/edit/edit-buku-tamu.php" method="POST" onsubmit="return confirm('simpan perubahan?')">
+                    <form action="../../../crud/edit/edit-reservasi-tamu.php" method="POST" onsubmit="return confirm('simpan perubahan?')">
                         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                         <!-- Card contact Pemohon -->
                         <div class="card">
@@ -185,7 +185,7 @@ if(isset($_POST['edit'])){
                         </div>
                         <input class="btn btn-simpan mb-3 " type="submit" name="simpan" value="Simpan" ></input>
                     </form>
-                    <a class="btn btn-kembali" href="../daftar-hadir.php">Kembali</a>
+                    <a class="btn btn-kembali" href="../daftar-reservasi.php">Kembali</a>
                 </div>
             </div>
         </main>
