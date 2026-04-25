@@ -19,6 +19,7 @@ Chart.js
 DataTables.js
 API:
 Fonte (WhatsApp Notification)
+
 📂 Project Structure
 /project
 │── /server
@@ -26,7 +27,7 @@ Fonte (WhatsApp Notification)
 │   ├── server-side-reservasi-tamu.php
 │
 │── /service
-│   ├── koneksi.php        # Database connection
+│   ├── koneksi.php
 │   ├── index.php
 │
 │── /crud
@@ -43,18 +44,7 @@ Fonte (WhatsApp Notification)
 │
 │── /page
 │   ├── /admin
-│   │   ├── dashboard.php
-│   │   ├── buku-tamu.php
-│   │   ├── daftar-hadir.php
-│   │   ├── daftar-reservasi.php
-│   │   ├── login-admin.php
-│   │   ├── reservasi.php
-│   │   ├── /form-edit
-│   │
 │   ├── /user
-│       ├── buku-tamu.php
-│       ├── dashboard.php
-│       ├── reservasi.php
 │
 │── /response
 │   ├── resCon-survey-buku-tamu.php
@@ -67,6 +57,7 @@ Fonte (WhatsApp Notification)
 │   ├── bootstrap
 │   ├── datatables
 │   ├── jquery
+
 ⚙️ Installation
 
 Clone repository:
