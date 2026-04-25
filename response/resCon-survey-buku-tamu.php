@@ -1,5 +1,5 @@
 <?php
-include "../service/koneksi.php";
+include(__DIR__ . "/../service/koneksi.php");
 include "resPhone-daftar-hadir-tamu.php";
 
 // ambil yang sudah lewat 30 menit

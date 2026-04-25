@@ -134,7 +134,7 @@ if(isset($_POST['edit'])){
                                         </span>
                                         <select class="form-select" id="tujuan" name="tujuan" required>
                                             <option selected disabled>-- Pilih --</option>
-                                            <option value="Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik)">Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik</option>
+                                            <option value="Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik" <?php if($row['tujuan_kunjungan'] == 'Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik') echo 'selected'; ?>>Ketua, Divisi Keuangan, Umum, Rumah Tangga dan Logistik</option>
                                             <option value="Divisi Teknis Penyelenggara"<?php if($row['tujuan_kunjungan'] == 'Divisi Teknis Penyelenggara') echo 'selected'; ?>>Divisi Teknis Penyelenggara</option>
                                             <option value="Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia" <?php if($row['tujuan_kunjungan'] == 'Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat, dan Sumber Daya Manusia') echo 'selected'; ?>>Divisi Sosialisasi, Pendidikan Pemilih, Partisipasi Masyarakat dan Sumber Daya Manusia</option>
                                             <option value="Divisi Perencanaan, Data, Dan Informasi" <?php if($row['tujuan_kunjungan'] == 'Divisi Perencanaan, Data, Dan Informasi') echo 'selected'; ?>>Divisi Perencanaan, Data dan Informasi</option>

@@ -22,6 +22,6 @@ while($row = $query->fetch_assoc()){
     kirimWA($nohp, $pesan);
 
     // update status
-    $db->query("UPDATE buku_tamu SET kirim_survei=1 WHERE id=".$row['id']);
+    $db->query("UPDATE reservasi_tamu SET kirim_survei=1 WHERE id=".$row['id']);
 }
 ?>

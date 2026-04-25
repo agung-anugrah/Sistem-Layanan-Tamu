@@ -147,14 +147,14 @@ if(!isset($_SESSION['username'])){
                                 </div>
                                 <div class="card-body">
                                     <div class="mb-3">
-                                        <label for="rencana" class="form-label">Rencana Kunjungan</label>
+                                        <label for="tanggal" class="form-label">Rencana Kunjungan</label>
                                         <div class="input-group">
                                             <span class="input-group-text">
                                                 <img src="../../icon/calendar.png" alt="" class="icon">
                                             </span>
-                                            <input type="datetime-local" class="form-control" id="rencana" name="tanggal">
+                                             <input type="datetime-local" class="form-control" id="rencana" name="tanggal">
                                         </div>
-                                        <small class="text-muted">mm/dd/yyyy, --:--</small>
+                                        <small class="text-muted">dd/mm/yyyy, --:--</small>
                                     </div>
                                     <div class="mb-3">
                                         <label for="tujuan" class="form-label">Tujuan Kunjungan</label>
@@ -231,5 +231,6 @@ if(!isset($_SESSION['username'])){
     </footer> 
     <!-- Bootstrap JS (untuk komponen interaktif jika diperlukan, tidak wajib untuk layout) -->
     <script src="../../script/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 </html>
