@@ -1,7 +1,7 @@
 <?php
 
 function kirimWA($target, $pesan) {
-    $token = "uUBaYJyym2j9h7hmLCUT";
+    $token = "YOUR API KEY";
     $curl = curl_init();
 
     curl_setopt_array($curl, array(
